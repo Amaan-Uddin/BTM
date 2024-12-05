@@ -1,0 +1,134 @@
+<nav className="navbar navbar-expand-lg bg-body-tertiary tw-text-lg">
+			<div className="container-fluid">
+				<Link className="navbar-brand tw-size-16 tw-flex tw-items-center" to="/">
+					<img src={Logo} alt="Logo" />
+				</Link>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						<li className="nav-item">
+							<Link className="nav-link active" aria-current="page" to="/">
+								Home
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/">
+								Link
+							</Link>
+						</li>
+					</ul>
+					<form className="d-flex" role="search">
+						<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button className="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+
+
+	<nav className="navbar navbar-expand-lg bg-body-tertiary tw-text-lg">
+			<div className="container-fluid">
+				{/* Logo */}
+				<Link className="navbar-brand tw-size-16 tw-flex tw-items-center" to="/">
+					<img src={Logo} alt="Logo" />
+				</Link>
+
+				{/* Toggler */}
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+
+				{/* Navbar Content */}
+				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						{/* Categories */}
+						<li className="nav-item dropdown">
+							<Link
+								className="nav-link dropdown-toggle tw-cursor-pointer"
+								id="categoriesDropdown"
+								role="button"
+								aria-expanded="false"
+							>
+								Categories
+							</Link>
+							<ul className="dropdown-menu" aria-labelledby="categoriesDropdown">
+								<li>
+									<Link className="dropdown-item" to="/category-1">
+										Category 1
+									</Link>
+								</li>
+								<li>
+									<Link className="dropdown-item" to="/category-2">
+										Category 2
+									</Link>
+								</li>
+								<li>
+									<Link className="dropdown-item" to="/category-3">
+										Category 3
+									</Link>
+								</li>
+							</ul>
+						</li>
+
+						{/* Featured Selection */}
+						<li className="nav-item dropdown">
+							<Link
+								className="nav-link dropdown-toggle tw-cursor-pointer"
+								id="featuredDropdown"
+								role="button"
+								aria-expanded="false"
+							>
+								Featured Selection
+							</Link>
+							<ul className="dropdown-menu" aria-labelledby="featuredDropdown">
+								<li>
+									<Link className="dropdown-item" to="/featured-1">
+										Featured 1
+									</Link>
+								</li>
+								<li>
+									<Link className="dropdown-item" to="/featured-2">
+										Featured 2
+									</Link>
+								</li>
+								<li>
+									<Link className="dropdown-item" to="/featured-3">
+										Featured 3
+									</Link>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					{/* Search Bar */}
+					<form className="d-flex" role="search">
+						<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button className="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
